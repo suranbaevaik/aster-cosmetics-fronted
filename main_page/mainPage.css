@@ -1,0 +1,265 @@
+:root {
+    --dark: #333333;
+    --pink: rgba(255, 166, 168, 0.75);
+    --dark-pink: #ffa6a8;
+    --light: rgba(255, 255, 255, 0.8);
+    --blue: #257b90;
+
+    --shadow: rgba(221, 221, 221, 1);
+
+    --white: rgba(255, 255, 255, 0.40);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0 0 12px 1px var(--shadow);
+}
+
+.site-logo img {
+    width: 5.5rem;
+}
+
+.site-logo:hover {
+    cursor: pointer;
+}
+
+.nav ul {
+    width: 31.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item a {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.icons-box {
+    display: flex;
+    justify-content: space-between;
+    width: 6.75rem;
+}
+
+.login-icon img {
+    width: 1.75rem;
+}
+
+.login-icon:hover {
+    cursor: pointer;
+}
+
+.bag-icon img {
+    width: 1.75rem;
+}
+
+.bag-icon:hover {
+    cursor: pointer;
+}
+
+/* MAIN STYLES */
+
+.main-container {
+    margin-top: 6.25rem;
+}
+
+/** banner **/
+
+.banner-container {
+    width: 100%;
+    height: 90vh;
+    background-image: url("./images/banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-box {
+    width: 30%;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner-box h2 {
+    color: var(--dark);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.btn-shop {
+    color: var(--light);
+    border: none;
+    background-color: var(--pink);
+    padding: 0.75rem 1.875rem;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+}
+
+.btn-shop:hover {
+    cursor: pointer;
+}
+
+/** product list **/
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.25rem 2.5rem 0;
+}
+
+.products-title h3 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.products-container {
+    width: 100vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 18.75rem;
+    padding: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 12px 1px var(--shadow);
+}
+
+.product-card p {
+    width: 100%;
+    font-family: 'El Messiri', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product-name {
+    color: var(--dark);
+    padding-top: 1rem;
+}
+
+.product-price {
+    color: var(--pink);
+    font-weight: 600;
+}
+
+
+/** modal window **/
+
+.product-img {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cart-btn-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: var(--white);
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.product-img:hover .cart-btn-box {
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+
+.cart-btn {
+    border: none;
+    appearance: none;
+    background-color: var(--dark-pink);
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+
+    .site-logo {
+        margin-left: 40%;
+    }
+
+    .banner-box h2 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .btn-shop {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    .products-title h3 {
+        font-size: 1.75rem;
+    }
+
+    .product-card p {
+        padding-bottom: 0.8rem;
+        font-size: 1rem;
+    }
+}

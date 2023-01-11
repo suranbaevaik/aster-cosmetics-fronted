@@ -52,4 +52,48 @@ btn.addEventListener('click', () => {
     alert(counter);
 })*/
 
+const btn = document.querySelector('.btn-shop');
+btn.addEventListener('click', () => {
+    //GET
+    /*fetch('http://localhost:5001/users')
+        .then((res) =>  res.json())
+        .then((data) => {
+            console.log(data)
+        })*/
+
+    //DELETE
+   /* fetch('http://localhost:5001/users/6', {
+        method: 'DELETE'
+
+    })
+        .then((res) =>  res.json())
+        .then((data) => {
+            console.log(data)
+        })*/
+
+    //PATCH POST
+    const data = {
+        email: "aibiike@gmail.com",
+        password: "asdfgh12345",
+        age: 10,
+        name: "Aibiike"
+    }
+
+    fetch('http://localhost:5001/registration', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            const p = document.createElement('p');
+            p.textContent = data.message;
+
+            document.querySelector('.banner-box').append(p);
+        })
+})
+
+
 
