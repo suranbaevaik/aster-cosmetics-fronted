@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cart Page - Aster Cosmetics</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./cartPage.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="site-logo">
+                <img src="../main_page/images/aster.png" alt="aster-logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">О НАС</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">ПРОДУКЦИЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons-box">
+                <div class="login-icon">
+                    <img src="../main_page/images/user.png" alt="user-icon">
+                </div>
+                <div class="bag-icon">
+                    <img src="../main_page/images/shopping-bag.svg" alt="bag-icon">
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <section class="cart-container">
+                <div>
+                    <h2>Корзина</h2>
+                </div>
+                <div class="cart-box-titles">
+                    <div>
+                        <p>Продукт</p>
+                    </div>
+                    <div>
+                        <p>Количество</p>
+                    </div>
+                    <div>
+                        <p>Цена</p>
+                    </div>
+                    <div>
+                        <p>К оплате</p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="cart-box-item">
+                    <div class="product-data">
+                        <img src="../main_page/images/cosmetic1.jpg" alt="">
+                        <p>Active Fleece Pants</p>
+                    </div>
+                    <div class="amount">
+                        <input type="number" />
+                    </div>
+                    <div class="item-price">
+                        <p>856 сом</p>
+                    </div>
+                    <div class="item-total-price">
+                        <p>856 сом</p>
+                    </div>
+                    <div class="remove">
+                        <img src="./images/remove.png" alt="remove-icon">
+                    </div>
+                </div>
+                <div class="sumup-box">
+                    <div class="text">
+                        <p>Итого:</p>
+                        <p>856 сом</p>
+                    </div>
+                </div>
+                <div class="cart-btn">
+                    <div>
+                        <p>
+                            <a href="#">< Продолжить покупки</a>
+                        </p>
+                    </div>
+                    <div>
+                        <button>Оформить заказ</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+    <script src="cartPage.js"></script>
+    </body>
+</html>

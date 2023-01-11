@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+:root {
+    --dark: #333333;
+    --pink: rgba(255, 166, 168, 0.75);
+    --dark-pink: #ffa6a8;
+    --light: rgba(255, 255, 255, 0.8);
+    --blue: #257b90;
+
+    --shadow: rgba(221, 221, 221, 1);
+
+    --white: rgba(255, 255, 255, 0.40);
+}
 
 * {
     margin: 0;
@@ -8,30 +16,220 @@
     box-sizing: border-box;
 }
 
+/* HEADER STYLES */
+
 header {
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.75rem;
     position: fixed;
     top: 0;
     background-color: white;
     z-index: 3;
+    box-shadow: 0 0 12px 1px var(--shadow);
 }
 
-.nav {
+.site-logo img {
+    width: 5.5rem;
+}
+
+.site-logo:hover {
+    cursor: pointer;
+}
+
+.nav ul {
+    width: 31.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item a {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.icons-box {
     display: flex;
     justify-content: space-between;
+    width: 6.75rem;
+}
+
+.login-icon img {
+    width: 1.75rem;
+}
+
+.login-icon:hover {
+    cursor: pointer;
+}
+
+.bag-icon img {
+    width: 1.75rem;
+}
+
+.bag-icon:hover {
+    cursor: pointer;
+}
+
+/* MAIN STYLES */
+
+.main-container {
+    margin-top: 12rem;
+}
+
+/** cart-banner **/
+
+.cart-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 20px;
-    padding: 20px 30px;
 }
 
-.nav img {
-    width: 30px;
+.cart-container h2 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
 }
 
-.title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 22px;
-    color: #603db5;
+/** cart-box **/
+
+.cart-box-titles {
+    width: 100vw;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 35% 20% 20% 20% 5%;
+    justify-content: center;
+    background-color: var(--pink);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.cart-box-titles div p {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+}
+
+.cart-box-item {
+    width: 100vw;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 35% 20% 20% 20% 5%;
+    justify-content: center;
+    background-color: var(--light);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.product-data {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-data img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.product-data p {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 12px;
+    color: var(--dark);
+}
+
+.amount input {
+    width: 130px;
+    padding: 10px;
+    color: var(--dark);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+
+.item-price p, .item-total-price p {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 12px;
+    color: var(--dark);
+}
+
+.remove img {
+    width: 1.5rem;
+    margin-top: 12px;
+}
+
+.sumup-box {
+    width: 100vw;
+    max-width: 1050px;
+    display: grid;
+    justify-content: end;
+    margin-top: 1rem;
+}
+
+.cart-btn {
+    width: 100vw;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.text p {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 2rem;
+}
+
+.cart-btn button {
+    border: none;
+    background-color: var(--dark-pink);
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.125rem;
+    padding: 5px 48px;
+    text-transform: uppercase;
 }
 
 
+@media screen and (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+
+    .site-logo {
+        margin-left: 40%;
+    }
+
+    .cart-container h2 {
+        font-size: 2rem;
+    }
+
+    .product-data p {
+        font-size: 1rem;
+    }
+
+    .amount input {
+        width: 70px;
+    }
+
+    .item-price p, .item-total-price p {
+        font-size: 0.9rem;
+    }
+}
