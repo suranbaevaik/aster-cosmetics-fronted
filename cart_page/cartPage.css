@@ -168,6 +168,10 @@ header {
     margin-top: 12px;
 }
 
+.remove img:hover {
+    cursor: pointer;
+}
+
 .sumup-box {
     width: 100vw;
     max-width: 1050px;
@@ -207,6 +211,14 @@ header {
     text-transform: uppercase;
 }
 
+.cart-btn button:hover {
+    cursor: pointer;
+}
+
+.cart-btn p a {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+}
 
 @media screen and (max-width: 1024px) {
     .nav {
