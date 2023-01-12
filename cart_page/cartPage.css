@@ -6,6 +6,7 @@
     --blue: #257b90;
 
     --shadow: rgba(221, 221, 221, 1);
+    --font-transparency: rgba(51, 51, 51, 0.8);
 
     --white: rgba(255, 255, 255, 0.40);
 }
@@ -55,20 +56,38 @@ header {
     font-weight: 600;
     color: var(--dark);
     text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+    color: var(--dark-pink);
 }
 
 .icons-box {
     display: flex;
     justify-content: space-between;
-    width: 6.75rem;
+    width: 25%;
+    gap: 10px;
 }
 
-.login-icon img {
-    width: 1.75rem;
+.icons-box div a {
+    text-decoration: none;
+    color: var(--dark);
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: 0.2s linear;
 }
 
-.login-icon:hover {
+.icons-box div a:hover {
     cursor: pointer;
+    color: var(--font-transparency);
+}
+
+.sign-up a {
+    border: 1px solid var(--dark);
+    border-radius: 6px;
 }
 
 .bag-icon img {
@@ -213,6 +232,7 @@ header {
 
 .cart-btn button:hover {
     cursor: pointer;
+    box-shadow: 1px 1px 19px 1px var(--shadow);
 }
 
 .cart-btn p a {
