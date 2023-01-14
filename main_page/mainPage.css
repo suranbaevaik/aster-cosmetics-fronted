@@ -194,19 +194,26 @@ header {
 .product-card p {
     width: 100%;
     font-family: 'El Messiri', sans-serif;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
     text-align: center;
 }
 
 .product-name {
     color: var(--dark);
     padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.product-desc {
+    color: grey;
+    font-size: 1rem;
+    padding-bottom: 1rem;
 }
 
 .product-price {
     color: var(--pink);
     font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 

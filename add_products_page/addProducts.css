@@ -1,0 +1,19 @@
+:root {
+    --dark: #333333;
+    --pink: rgba(255, 166, 168, 0.75);
+    --dark-pink: #ffa6a8;
+    --light: rgba(255, 255, 255, 0.8);
+    --blue: #257b90;
+
+    --shadow: rgba(221, 221, 221, 1);
+    --font-transparency: rgba(51, 51, 51, 0.8);
+
+    --white: rgba(255, 255, 255, 0.40);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
