@@ -10,34 +10,35 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="./login_page/login.css">
     </head>
     <body>
 
         <main class="main-container">
             <section class="title-container">
-                <img src="../main_page/images/aster.png" alt="logo">
+                <img src="./main_page/images/aster.png" alt="logo">
                 <h2>ВОЙТИ НА САЙТ</h2>
             </section>
 
             <section class="form-container">
-                <form>
+                <form action="#">
                     <label for="email">Email</label>
                     <input id="email" type="email">
 
                     <label for="password">Пароль</label>
                     <input id="password" type="password">
+                    <p class="error-text"></p>
 
-                    <button type="submit">ВОЙТИ</button>
+                    <button type="button" id="login-btn">ВОЙТИ</button>
                 </form>
                 <div>
-                    <a href="#">Вернуться на главную</a>
-                    <a href="#">Зарегистрироваться</a>
+                    <a href="./mainPage.html">Вернуться на главную</a>
+                    <a href="./register.html">Зарегистрироваться</a>
                 </div>
             </section>
         </main>
 
 
-    <script src="login.js"></script>
+    <script src="./login_page/login.js"></script>
     </body>
 </html>

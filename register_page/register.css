@@ -96,3 +96,9 @@
     color: var(--dark);
     font-size: 14px;
 }
+
+.err-text {
+    color: var(--dark-pink);
+    font-size: 13px;
+    margin: 0 0 7px 0;
+}

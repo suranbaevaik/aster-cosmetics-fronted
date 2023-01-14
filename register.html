@@ -10,43 +10,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Mulish:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./register.css">
+        <link rel="stylesheet" href="./register_page/register.css">
     </head>
     <body>
 
     <main class="main-container">
         <section class="title-container">
-            <img src="../main_page/images/aster.png" alt="logo">
+            <img src="./main_page/images/aster.png" alt="logo">
             <h2>РЕГИСТРАЦИЯ</h2>
         </section>
 
         <section class="form-container">
-            <form>
-                <label for="name">Имя</label>
-                <input id="name" type="text">
+            <form action="#">
+                <label for="nameReg">Имя</label>
+                <input id="nameReg" type="text">
 
-                <label for="age">Возраст</label>
-                <input id="age" type="number">
+                <label for="ageReg">Возраст</label>
+                <input id="ageReg" type="number">
 
-                <label for="email">Email</label>
-                <input id="email" type="email">
+                <label for="emailReg">Email</label>
+                <input id="emailReg" type="email">
 
-                <label for="password">Пароль</label>
-                <input id="password" type="password">
+                <label for="pwd">Пароль</label>
+                <input id="pwd" type="password">
+                <p class="err-text"></p>
 
-                <label for="password2">Подтверждение пароля</label>
-                <input id="password2" type="password">
-
-                <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                <button id="register-btn" type="button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </form>
             <div>
-                <a href="#">Вернуться на главную</a>
-                <a href="#">Войти</a>
+                <a href="./mainPage.html">Вернуться на главную</a>
+                <a href="./login.html">Войти</a>
             </div>
         </section>
     </main>
 
 
-    <script src="register.js"></script>
+    <script src="./register_page/register.js"></script>
     </body>
 </html>
