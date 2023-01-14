@@ -46,7 +46,7 @@ registerBtn.addEventListener('click', () => {
             passwordInput.value = '';
             formData = {};
             errorText.textContent = '';
-            window.location.href = './mainPage.html';
+            window.location.href = './login.html';
         })
         .catch((error) => {
             if (error.message) {

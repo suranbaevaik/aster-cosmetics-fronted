@@ -34,7 +34,7 @@ loginBtn.addEventListener('click', () => {
            passwordInput.value = '';
            formData = {};
            errorText.textContent = '';
-           localStorage.setItem('user', JSON.stringify(data.email));
+           localStorage.setItem('user', data["_id"]);
            window.location.href = './mainPage.html';
         })
         .catch((error) => {

@@ -175,6 +175,22 @@ header {
     border: 1px solid var(--dark);
 }
 
+/*.amount {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    align-items: center;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.25rem;
+}*/
+
+.amount button {
+    border: none;
+    appearance: none;
+    background: none;
+    font-size: 1.25rem;
+}
+
 .item-price p, .item-total-price p {
     font-family: 'El Messiri', sans-serif;
     font-size: 1.25rem;
